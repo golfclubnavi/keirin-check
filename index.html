@@ -16602,6 +16602,156 @@ button.meetPerfFinish.isLink.late{
   .keirinInactiveGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 </style>
+
+<style id="keirin-home-boat-card-fix-20260917">
+/* Home venue cards: BOAT CHECK-like proportions, three columns, full-width flow. */
+#homeVenuesPanel #venues.keirinVenueGrid{
+  display:block!important;
+  grid-template-columns:none!important;
+  gap:0!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid > .keirinActiveGrid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:8px!important;
+  width:100%!important;
+  min-width:0!important;
+  align-items:stretch!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardBoat{
+  width:100%!important;
+  min-width:0!important;
+  min-height:128px!important;
+  padding:0!important;
+  overflow:hidden!important;
+  border:1.35px solid #79b1cf!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  box-shadow:0 4px 10px rgba(8,58,91,.075)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  position:relative!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardBoat::after{display:none!important}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardHead{
+  position:relative!important;
+  min-height:48px!important;
+  padding:7px 5px 6px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border-bottom:1px solid #9ec9dd!important;
+  background:linear-gradient(180deg,#d9f1fb 0%,#bfe5f4 100%)!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardHead .keirinMeetRegion{
+  position:absolute!important;
+  top:4px!important;
+  left:5px!important;
+  max-width:42%!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  color:#60798c!important;
+  font-size:6px!important;
+  line-height:1!important;
+  font-weight:900!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardHead .keirinMeetName{
+  margin:7px 0 0!important;
+  color:#0d2f4a!important;
+  font-size:15px!important;
+  line-height:1.05!important;
+  font-weight:950!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta{
+  min-height:35px!important;
+  padding:6px 4px!important;
+  display:grid!important;
+  grid-template-columns:auto 1fr auto!important;
+  align-items:center!important;
+  gap:4px!important;
+  border-bottom:1px solid #c8dde8!important;
+  background:#f8fcfe!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta .keirinGrade{
+  min-width:28px!important;
+  height:20px!important;
+  padding:0 5px!important;
+  border-radius:5px!important;
+  font-size:7px!important;
+  line-height:20px!important;
+  font-weight:950!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta>b{
+  min-width:0!important;
+  color:#244861!important;
+  font-size:10px!important;
+  line-height:1!important;
+  font-weight:950!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta>small{
+  color:#718595!important;
+  font-size:6px!important;
+  line-height:1!important;
+  font-weight:850!important;
+  white-space:nowrap!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardRace{
+  flex:1!important;
+  min-height:43px!important;
+  display:grid!important;
+  grid-template-columns:1fr 1.35fr!important;
+  align-items:center!important;
+  padding:6px 3px!important;
+  background:#fff!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardRace>b{
+  min-width:0!important;
+  color:#102f49!important;
+  font-size:15px!important;
+  line-height:1.1!important;
+  font-weight:950!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+  font-variant-numeric:tabular-nums!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardRace>b:first-child{
+  border-right:1px solid #bad6e4!important;
+}
+#homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardRace>b.time{color:#b92b3a!important}
+#homeVenuesPanel #venues.keirinVenueGrid > .keirinInactiveToggle,
+#homeVenuesPanel #venues.keirinVenueGrid > .keirinInactiveWrap{
+  width:100%!important;
+  grid-column:1/-1!important;
+}
+@media(max-width:390px){
+  #homeVenuesPanel #venues.keirinVenueGrid > .keirinActiveGrid{gap:6px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardBoat{min-height:122px!important;border-radius:11px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardHead{min-height:45px!important;padding:6px 4px 5px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardHead .keirinMeetName{font-size:14px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta{min-height:33px!important;padding:5px 3px!important;gap:3px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta>b{font-size:9px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardRace{min-height:41px!important;padding:5px 2px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardRace>b{font-size:14px!important}
+}
+@media(max-width:350px){
+  #homeVenuesPanel #venues.keirinVenueGrid > .keirinActiveGrid{gap:5px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardHead .keirinMeetName{font-size:13px!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta>small{display:none!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardMeta{grid-template-columns:auto 1fr!important}
+  #homeVenuesPanel #venues.keirinVenueGrid .keirinMeetCardRace>b{font-size:13px!important}
+}
+</style>
+
 <!-- KEIRIN CHECK home vertical cards update 2026-09-16 -->
 <script id="keirin-check-v2-script">
 // ===== KEIRIN ✓ CHECK v2 =====
@@ -16626,7 +16776,7 @@ function keirinDateNavHTML(){const defs=[[-1,'‹ 前日開催'],[0,'本日開�
 function keirinEnsureDateNav(){let nav=document.getElementById('keirinDateNav');const tabs=document.getElementById('homeTabs');if(!nav&&tabs){tabs.insertAdjacentHTML('beforebegin',keirinDateNavHTML())}else if(nav){nav.outerHTML=keirinDateNavHTML()}}
 function keirinSelectDay(offset){keirinSelectedOffset=offset;keirinInactiveOpen=false;keirinEnsureDateNav();renderKeirinHomeV2()}
 function keirinHomeHeading(){return keirinSelectedOffset===0?'開催中':keirinSelectedOffset<0?'前日開催':'明日開催予定'}
-function keirinMeetCardHTML(m){return `<article class="keirinMeetCard" onclick="openKeirinVenueV2('${m.code}')"><div class="keirinMeetTop"><span class="keirinMeetRegion">${m.region}</span><span class="keirinGrade ${keirinGradeClassV2(m.grade)}">${m.grade}</span></div><div class="keirinMeetName">${m.name}</div><div class="keirinMeetEvent">${m.event}</div><div class="keirinMeetStatus"><div><small>${m.dayNo}日目・次レース</small><b>${m.nextRace}R</b></div><div><small>締切予定</small><b class="time">${m.cutoff}</b></div></div><div class="keirinMeetFoot"><span>7車/9車</span></div></article>`}
+function keirinMeetCardHTML(m){return `<article class="keirinMeetCard keirinMeetCardBoat" onclick="openKeirinVenueV2('${m.code}')" title="${m.event}"><div class="keirinMeetCardHead"><span class="keirinMeetRegion">${m.region}</span><b class="keirinMeetName">${m.name}</b></div><div class="keirinMeetCardMeta"><span class="keirinGrade ${keirinGradeClassV2(m.grade)}">${m.grade}</span><b>${m.dayNo}日目</b><small>7/9車</small></div><div class="keirinMeetCardRace"><b>${m.nextRace}R</b><b class="time">${m.cutoff}</b></div></article>`}
 function renderKeirinHomeV2(){
   const root=document.getElementById('venues');if(!root)return;
   root.classList.add('keirinVenueGrid');
